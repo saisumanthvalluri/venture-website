@@ -1,0 +1,118 @@
+.venture-details-bg {
+    padding-bottom: 30px;
+    .bg-image {
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+    }
+
+    .details-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            position: absolute;
+            top: -85px;
+            left: 50px;
+
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid #4a4a50;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #1f1f31;
+        margin-block: 20px;
+
+        span {
+            color: #1f1f31;
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+
+    .image-view-box {
+        width: 80%;
+        margin-top: 20px;
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .image-tabs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+
+            img {
+                flex: 1;
+                height: 100px;
+                object-fit: cover;
+                border: 1px solid #4a4a50;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .facilities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 80%;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f1f31;
+            margin-block: 20px;
+            align-self: flex-start;
+        }
+
+        .facilities-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 0;
+            width: 100%;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+    .layout-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 80%;
+        padding: 30px;
+
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+            color: #1f1f31;
+            margin-block: 20px;
+        }
+
+        img {
+            width: 100%;
+            /* height: 400px; */
+            object-fit: cover;
+        }
+    }
+}

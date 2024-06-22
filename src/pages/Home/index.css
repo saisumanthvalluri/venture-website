@@ -1,0 +1,252 @@
+.home-bg {
+    /* height: 100vh; */
+
+    .bg-image {
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+    }
+
+    .approved-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 150px 20px 20px 20px;
+        gap: 30px;
+        position: relative;
+
+        .find-property-box-bg {
+            background-color: #5456cc;
+            width: 600px;
+            height: 80px;
+            position: absolute;
+            top: -4px;
+            padding: 8px;
+
+            .find-property-box {
+                width: 100%;
+                height: 230%;
+                background-color: #fff;
+                position: relative;
+                bottom: 85px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000;
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .input-select-box {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    }
+
+                    button {
+                        width: 50%;
+                        height: 40px;
+                        border-radius: 5px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #fff;
+                        background-color: #ed394b;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #000;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+
+            li {
+                background-image: url("../../../public/certified.jpg");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+
+                color: aliceblue;
+                height: 100px;
+                width: 100px;
+                border-radius: 5px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .top-ventures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        gap: 30px;
+        background-color: #d6eff6;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            li {
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 350px;
+                padding-block-end: 10px;
+                gap: 10px;
+                border-radius: 5px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 230px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+
+                .heart-icon {
+                    position: absolute;
+                    bottom: 200px;
+                    right: 30px;
+                    padding: 3px;
+                    background-color: #000;
+                    color: #fff;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                .heading {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #382e47;
+                    align-self: flex-start;
+                    margin-inline: 10px;
+                }
+
+                .address-box {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                    align-self: flex-start;
+                    margin-inline: 10px;
+
+                    .loc-icon {
+                        width: 20px;
+                        height: 20px;
+                        color: #9b94a6;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #9b94a6;
+                        align-self: flex-start;
+                    }
+                }
+
+                .tags-list {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    align-self: flex-start;
+                    margin-inline: 10px;
+
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                        width: max-content;
+                        padding: 5px;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-radius: 2px;
+                    }
+                }
+
+                .price {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #9f95ac;
+                    align-self: flex-start;
+                    margin-inline: 10px;
+
+                    span {
+                        color: #7e61a9;
+                    }
+                }
+
+                hr {
+                    width: 96%;
+                    height: 1px;
+                    background-color: #9b94a6;
+                }
+
+                .counts {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding-inline: 10px;
+
+                    .count-item {
+                        width: max-content;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-align: center;
+
+                        p {
+                            color: #9b94a6;
+                        }
+
+                        span {
+                            color: #473f54;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
