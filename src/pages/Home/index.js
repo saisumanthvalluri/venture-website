@@ -10,6 +10,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import "./index.css";
+import Footer from "../../components/Footer";
 
 const Home = () => {
     const [approvedBy, setApprovedBy] = useState("DTPC");
@@ -25,7 +26,7 @@ const Home = () => {
     return (
         <div className="home-bg">
             <Header />
-            <img src="./bg.jpg" alt="bg" className="bg-image" />
+            <img src="./new-bg.jpg" alt="bg" className="bg-image" />
 
             <div className="approved-div">
                 <div className="find-property-box-bg">
@@ -132,6 +133,7 @@ const Home = () => {
                     ))}
                 </ul>
             </div>
+            <Footer />
         </div>
     );
 };

@@ -33,8 +33,9 @@ const Header = () => {
 
     return (
         <div className="header-bg">
-            <Link to="/">
-                <h1>Trustmyproperty</h1>
+            <Link to="/" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                <img src="./logo.jpg" alt="logo" style={{ width: "55px", borderRadius: "100vh" }} />
+                <h1>iTrustmyproperty</h1>
             </Link>
             <div className="login-btns">
                 <button className="login-btn" onClick={() => handleOpen("login")}>

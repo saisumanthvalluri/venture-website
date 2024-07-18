@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
-import DoneIcon from "@mui/icons-material/Done";
-import RemoveIcon from "@mui/icons-material/Remove";
+import { Link } from "react-router-dom";
+// import DoneIcon from "@mui/icons-material/Done";
+// import RemoveIcon from "@mui/icons-material/Remove";
+import { FaRoad } from "react-icons/fa6";
 import { facilities, imageTabs } from "../../appConstants";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import "./index.css";
 
 const VentureDetails = () => {
@@ -18,12 +21,23 @@ const VentureDetails = () => {
     return (
         <div className="venture-details-bg">
             <Header />
-            <img src="./bg.jpg" alt="bg" className="bg-image" />
+            <img src="./new-bg.jpg" alt="bg" className="bg-image" />
             <div className="details-box">
-                <img src="./sa-logo.jpg" alt="bg" className="logo" />
+                <img src="./LVR.png" alt="bg" className="logo" />
                 <h2>
-                    SUKRUTHI AVATHIKA <span>by Subhagruha</span>
+                    LVR GARDENS{" "}
+                    <span>
+                        by <Link to="/company-details">Sri Bhavya Constructions & Developers</Link>
+                    </span>
                 </h2>
+
+                <p>
+                    LVR Gardens Venture HighlightsCRDA Approved Gated CommunityMain Entrance Arch with SecurityCentrally
+                    Monitored CCTV Cameras , 60ft Main Road with Dividers and Street Lights40 ft Internal Blacktop
+                    RoadsOverhead Tank Solar Fenced Compound WallsNaming Board for Each and Every plotWater Tap
+                    Connection for Individual PlotsChildren Play Area with Open SpaceElectric SupplyDrainage
+                    SystemAvenue Plantation Luxurious Independent Houses..... Etc
+                </p>
 
                 <div className="image-view-box">
                     <img src={imageTabs[activeImgId].img} alt="bg" />
@@ -43,23 +57,40 @@ const VentureDetails = () => {
                 <div className="facilities">
                     <h3>Facilities</h3>
                     <ul className="facilities-list">
-                        {facilities.map((item) => (
-                            <li key={item.id}>
-                                {item.availability ? (
+                        {facilities.map((e) => {
+                            const { icon } = e;
+                            return (
+                                <li key={e.id}>
+                                    {/* {item.availability ? (
                                     <DoneIcon sx={{ color: "green" }} />
                                 ) : (
                                     <RemoveIcon sx={{ color: "gray" }} />
-                                )}
-                                <p style={{ color: !item.availability ? "gray" : "" }}>{item.text}</p>
-                            </li>
-                        ))}
+                                )} */}
+                                    <p>{e.text}</p>
+                                    {icon}
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+                <div className="highlights">
+                    <h3>Location HighLights</h3>
+                    <ul className="highlights-list">
+                        <li>3 KM to School</li>
+                        <li>1 KM to College</li>
+                        <li>1 KM to Store</li>
+                        <li>2 KM to Hospital</li>
+                        <li>500 Mtrs to Public Transportation</li>
+                        <li>750 mtrs (Vejendla Station ) to Railway Station</li>
+                        <li>1 KM to Bus Stop</li>
                     </ul>
                 </div>
                 <div className="layout-box">
                     <h3>Layout</h3>
-                    <img src="./layout.jpg" alt="bg" />
+                    <img src="./new-layout.jpg" alt="bg" />
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

@@ -1,3 +1,14 @@
+import { FaRoad } from "react-icons/fa6";
+import { IoWater } from "react-icons/io5";
+import { LuParkingCircle } from "react-icons/lu";
+import { PiParkFill } from "react-icons/pi";
+import { TbCircuitGround } from "react-icons/tb";
+import { GiSecurityGate } from "react-icons/gi";
+import { GiBrickWall } from "react-icons/gi";
+import { IoIosWifi } from "react-icons/io";
+import { FcElectricity } from "react-icons/fc";
+import { MdOutlineEmojiTransportation } from "react-icons/md";
+
 export const topventures = [
     {
         id: 1,
@@ -266,139 +277,89 @@ export const gunturVentures = [
 export const imageTabs = [
     {
         id: 0,
-        img: "./house.jpg",
+        img: "./new-img-tab-1.jpg",
     },
     {
         id: 1,
-        img: "./img-tab-1.jpg",
+        img: "./new-img-tab-2.jpg",
     },
     {
         id: 2,
-        img: "./img-tab-2.jpg",
+        img: "./new-img-tab-3.jpg",
     },
     {
         id: 3,
-        img: "./img-tab-3.jpg",
+        img: "./new-img-tab-4.jpg",
     },
     {
         id: 4,
-        img: "./img-tab-4.jpeg",
+        img: "./new-img-tab-5.jpg",
     },
     {
         id: 5,
-        img: "./img-tab-5.jpg",
+        img: "./new-img-tab-6.jpg",
     },
 ];
 
 export const facilities = [
     {
         id: 1,
-        text: "Air Conditioning",
+        text: "Roads",
         availability: true,
+        icon: <FaRoad className="faci-icon" />,
     },
     {
         id: 2,
-        text: "Condition",
+        text: "Water Facility",
         availability: false,
+        icon: <IoWater className="faci-icon" />,
     },
     {
         id: 3,
-        text: "Basketball court",
+        text: "Parking",
         availability: true,
+        icon: <LuParkingCircle className="faci-icon" />,
     },
     {
         id: 4,
-        text: "Microwave",
+        text: "Park",
         availability: false,
+        icon: <PiParkFill className="faci-icon" />,
     },
     {
         id: 5,
-        text: "Alarm System",
+        text: "Play Area",
         availability: false,
+        icon: <TbCircuitGround className="faci-icon" />,
     },
     {
         id: 6,
-        text: "Sauna",
+        text: "Security",
         availability: false,
+        icon: <GiSecurityGate className="faci-icon" />,
     },
     {
         id: 7,
-        text: "Dish Washer",
+        text: "Security Wall",
         availability: false,
+        icon: <GiBrickWall className="faci-icon" />,
     },
     {
         id: 8,
-        text: "Laundry",
+        text: "Transportation",
         availability: true,
+        icon: <MdOutlineEmojiTransportation className="faci-icon" />,
     },
     {
         id: 9,
-        text: "Basketball Court",
+        text: "Internet",
         availability: true,
+        icon: <IoIosWifi className="faci-icon" />,
     },
     {
         id: 10,
-        text: "New Construction",
+        text: "Electricity",
         availability: true,
-    },
-    {
-        id: 11,
-        text: "Dryer TV Cable",
-        availability: true,
-    },
-    {
-        id: 12,
-        text: "Lawn",
-        availability: true,
-    },
-    {
-        id: 13,
-        text: "Refrigerator",
-        availability: true,
-    },
-    {
-        id: 14,
-        text: "Carport",
-        availability: true,
-    },
-    {
-        id: 15,
-        text: "Gym",
-        availability: true,
-    },
-    {
-        id: 16,
-        text: "Pool",
-        availability: true,
-    },
-    {
-        id: 17,
-        text: "Heighbors",
-        availability: true,
-    },
-    {
-        id: 18,
-        text: "Floor Boards",
-        availability: false,
-    },
-    {
-        id: 19,
-        text: "Dryer",
-        availability: true,
-    },
-    {
-        id: 20,
-        text: "Spa",
-        availability: false,
-    },
-    {
-        id: 21,
-        text: "Wifi",
-        availability: false,
-    },
-    {
-        id: 22,
-        text: "Mountaines",
-        availability: false,
+        icon: <FcElectricity className="faci-icon" />,
     },
 ];

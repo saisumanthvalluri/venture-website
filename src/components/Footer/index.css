@@ -1,0 +1,93 @@
+.footer {
+    background-color: #343536;
+    padding: 30px 80px;
+    color: #cecfd0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 50px;
+            border-radius: 5px;
+        }
+        h3 {
+            color: #b39822;
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+
+    .footer-items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .sub-items-box {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                input {
+                    width: 200px;
+                    height: 30px;
+                    outline: none;
+                    border: none;
+                    border-radius: 2px;
+                    padding: 5px 10px;
+                }
+
+                button {
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    padding: 5px 10px;
+                    background-color: #b39822;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .social-icon {
+                font-size: 20px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                color: #b39822;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #6f6f70;
+        margin-top: 30px;
+    }
+
+    .cr-pp-tc {
+        display: flex;
+        align-items: center;
+        gap: 18%;
+    }
+}

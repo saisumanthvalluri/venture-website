@@ -3,26 +3,27 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { topventures } from "../../appConstants";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import "./index.css";
 
 const CompanyDetails = () => {
     return (
         <div className="comp-details-bg">
             <Header />
-            <img src="./bg.jpg" alt="bg" className="bg-image" />
+            <img src="./new-bg.jpg" alt="bg" className="bg-image" />
             <div className="details-box">
-                <img src="./sa-logo.jpg" alt="bg" className="logo" />
-                <h2>Subhagruha Projects Private Limited</h2>
+                <img src="./Realtor-logo.png" alt="bg" className="logo" />
+                <h2>Sri Bhavya Constructions & Infra</h2>
 
                 <p className="description">
-                    Subhagruha Projects Private Limited is a private limited company established in 2016. The company is
+                    Sri Bhavya Constructions Private Limited is a private limited company established in 2016. The
+                    company is engaged in the construction of residential and commercial properties. The company is
                     engaged in the construction of residential and commercial properties. The company is engaged in the
-                    construction of residential and commercial properties. The company is engaged in the
                 </p>
                 <p className="description">
-                    Subhagruha Projects Private Limited is a private limited company established in 2016. The company is
+                    Sri Bhavya Constructions Private Limited is a private limited company established in 2016. The
+                    company is engaged in the construction of residential and commercial properties. The company is
                     engaged in the construction of residential and commercial properties. The company is engaged in the
-                    construction of residential and commercial properties. The company is engaged in the
                 </p>
 
                 <div className="on-going-projects">
@@ -77,6 +78,7 @@ const CompanyDetails = () => {
                     </ul>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

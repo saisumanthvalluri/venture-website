@@ -1,5 +1,4 @@
 .venture-details-bg {
-    padding-bottom: 30px;
     .bg-image {
         width: 100%;
         height: 400px;
@@ -22,6 +21,14 @@
             object-fit: cover;
             border-radius: 50%;
             border: 1px solid #4a4a50;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #4a4a50;
+            margin: 15px 10%;
+            line-height: 25px;
         }
     }
 
@@ -91,16 +98,42 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
+
+                .faci-icon {
+                    color: gray;
+                    font-size: 20px;
+                }
             }
+        }
+    }
+
+    .highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1f1f31;
+            margin-block: 20px;
+            align-self: flex-start;
+        }
+
+        .highlights-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
     }
     .layout-box {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         gap: 10px;
         width: 80%;
-        padding: 30px;
+        /* padding: 30px; */
 
         h3 {
             font-size: 25px;

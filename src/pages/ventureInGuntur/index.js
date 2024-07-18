@@ -1,3 +1,4 @@
+import { useState } from "react";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -15,8 +16,8 @@ import StarIcon from "@mui/icons-material/Star";
 import Select from "@mui/material/Select";
 import Header from "../../components/Header";
 import { gunturVentures } from "../../appConstants";
+import Footer from "../../components/Footer";
 import "./index.css";
-import { useState } from "react";
 
 const VentureInGuntur = () => {
     const [sortBy, setSortBy] = useState("sort by Price");
@@ -28,7 +29,7 @@ const VentureInGuntur = () => {
     return (
         <div className="gunt-ventures-bg">
             <Header />
-            <img src="./bg.jpg" alt="bg" className="bg-image" />
+            <img src="./new-bg.jpg" alt="bg" className="bg-image" />
             <div className="gunt-ventures-box">
                 <h5>Ventures in Guntur</h5>
                 <div className="sort-box">
@@ -111,6 +112,7 @@ const VentureInGuntur = () => {
                     ))}
                 </ul>
             </div>
+            <Footer />
         </div>
     );
 };
